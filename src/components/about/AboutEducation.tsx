@@ -9,7 +9,7 @@ const AboutEducation = () => {
       institution: "United International University",
       year: "Jan 2020 - Jan 2024",
       description: "Major: Data Science | CGPA: 3.90 (On a scale of 4)",
-      logo: "/lovable-uploads/094d510f-061d-444c-8355-679f43fd37da.png",
+      logo: "/img/094d510f-061d-444c-8355-679f43fd37da.png",
       theme: "bg-gradient-to-br from-orange-100 to-red-100 dark:from-orange-900/20 dark:to-red-900/20 border-orange-300 dark:border-orange-700",
       iconColor: "text-orange-700 dark:text-orange-400"
     },
@@ -18,7 +18,7 @@ const AboutEducation = () => {
       institution: "Dhaka City College", 
       year: "2017 - 2019",
       description: "Group: Science | GPA: 5.00 (On a scale of 5)",
-      logo: "/lovable-uploads/7d7dc953-c98f-4fb7-89f9-eb2149de0e9d.png",
+      logo: "/img/7d7dc953-c98f-4fb7-89f9-eb2149de0e9d.png",
       theme: "bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/20 dark:to-emerald-900/20 border-green-300 dark:border-green-700",
       iconColor: "text-green-700 dark:text-green-400"
     },
@@ -27,7 +27,7 @@ const AboutEducation = () => {
       institution: "Savar Cantonment Public School",
       year: "2015 - 2017", 
       description: "Group: Science | GPA: 5.00 (On a scale of 5)",
-      logo: "/lovable-uploads/fe728535-f4a2-487b-bd37-864fe8ad70e1.png",
+      logo: "/img/fe728535-f4a2-487b-bd37-864fe8ad70e1.png",
       theme: "bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/20 dark:to-cyan-900/20 border-blue-300 dark:border-blue-700",
       iconColor: "text-blue-700 dark:text-blue-400"
     }
