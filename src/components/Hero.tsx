@@ -47,7 +47,7 @@ const Hero = () => {
             and fostering innovation in technology.
           </p>
 
-          <div className="flex justify-center space-x-6 mb-16">
+          {/* <div className="flex justify-center space-x-6 mb-16">
             <button
               onClick={() => handleScrollTo('contact')}
               className="bg-blue-600 dark:bg-blue-500 text-white px-8 py-3 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer"
@@ -60,7 +60,7 @@ const Hero = () => {
             >
               Learn More
             </button>
-          </div>
+          </div> */}
 
           <div className="flex justify-center space-x-6">
             <a href="mailto:syed.efta@gmail.com" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
