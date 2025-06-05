@@ -10,7 +10,7 @@ export const experienceData: Record<string, ExperienceData> = {
     description: "Teaching undergraduate courses and conducting research in artificial intelligence and computer science fundamentals.",
     theme: "bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 border-green-200 dark:border-green-700",
     iconTheme: "bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-400",
-    logo: "/img/da671a74-63be-4e2b-900b-b18a547a7244.png",
+    logo: "dist/img/da671a74-63be-4e2b-900b-b18a547a7244.png",
     profileUrl: "https://faculty.daffodilvarsity.edu.bd/profile/cse/eftasum.html",
     achievements: [
       "Artificial Intelligence",
@@ -34,7 +34,7 @@ export const experienceData: Record<string, ExperienceData> = {
     description: "Conducted foundational and advanced computer science courses while providing comprehensive academic support to students.",
     theme: "bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 border-amber-200 dark:border-amber-700",
     iconTheme: "bg-amber-100 dark:bg-amber-900 text-amber-600 dark:text-amber-400",
-    logo: "/img/d955507b-7a71-48c8-992a-2d487a4c22fe.png",
+    logo: "dist/img/d955507b-7a71-48c8-992a-2d487a4c22fe.png",
     achievements: [
       "Discrete Mathematics",
       "Digital Logic Design",
@@ -56,7 +56,7 @@ export const experienceData: Record<string, ExperienceData> = {
     description: "Led specialized programming instruction for students requiring additional support in Structured Programming Language fundamentals.",
     theme: "bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 border-amber-200 dark:border-amber-700",
     iconTheme: "bg-amber-100 dark:bg-amber-900 text-amber-600 dark:text-amber-400",
-    logo: "/img/d955507b-7a71-48c8-992a-2d487a4c22fe.png",
+    logo: "dist/img/d955507b-7a71-48c8-992a-2d487a4c22fe.png",
     achievements: [
       "Structured Programming Language (CSE 1111)",
       "Programming Fundamentals",
@@ -78,7 +78,7 @@ export const experienceData: Record<string, ExperienceData> = {
     description: "Assisted faculty members in delivering effective computer science education while supporting student academic development.",
     theme: "bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 border-amber-200 dark:border-amber-700",
     iconTheme: "bg-amber-100 dark:bg-amber-900 text-amber-600 dark:text-amber-400",
-    logo: "/img/d955507b-7a71-48c8-992a-2d487a4c22fe.png",
+    logo: "dist/img/d955507b-7a71-48c8-992a-2d487a4c22fe.png",
     achievements: [
       "Introduction to Computer Systems",
       "Structured Programming Language",
