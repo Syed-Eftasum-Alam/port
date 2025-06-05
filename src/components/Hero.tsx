@@ -1,9 +1,18 @@
-
 import React from 'react';
 import { ChevronDown, Mail, Linkedin, Github, GraduationCap } from 'lucide-react';
 import profile_pic from '../../public/img/dp.png';
 
 const Hero = () => {
+  const handleScrollTo = (targetId: string) => {
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 pt-20">
       <div className="container mx-auto px-6 text-center">
@@ -39,18 +48,18 @@ const Hero = () => {
           </p>
 
           <div className="flex justify-center space-x-6 mb-16">
-            <a
-              href="#contact"
-              className="bg-blue-600 dark:bg-blue-500 text-white px-8 py-3 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            <button
+              onClick={() => handleScrollTo('contact')}
+              className="bg-blue-600 dark:bg-blue-500 text-white px-8 py-3 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer"
             >
               Get In Touch
-            </a>
-            <a
-              href="#about"
-              className="border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 px-8 py-3 rounded-lg hover:bg-blue-600 dark:hover:bg-blue-400 hover:text-white dark:hover:text-slate-900 transition-all duration-200 transform hover:scale-105"
+            </button>
+            <button
+              onClick={() => handleScrollTo('about')}
+              className="border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 px-8 py-3 rounded-lg hover:bg-blue-600 dark:hover:bg-blue-400 hover:text-white dark:hover:text-slate-900 transition-all duration-200 transform hover:scale-105 cursor-pointer"
             >
               Learn More
-            </a>
+            </button>
           </div>
 
           <div className="flex justify-center space-x-6">
