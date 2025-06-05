@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Menu, X } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
@@ -15,6 +14,20 @@ const Header = () => {
     { href: '#contact', label: 'Contact' },
   ];
 
+  const handleMenuClick = (href: string) => {
+    const targetId = href.substring(1); // Remove the '#'
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm border-b border-slate-200 dark:border-slate-700">
       <nav className="container mx-auto px-6 py-4">
@@ -26,13 +39,13 @@ const Header = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {menuItems.map((item) => (
-              <a
+              <button
                 key={item.href}
-                href={item.href}
-                className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 font-medium"
+                onClick={() => handleMenuClick(item.href)}
+                className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 font-medium bg-transparent border-none cursor-pointer"
               >
                 {item.label}
-              </a>
+              </button>
             ))}
             <ThemeToggle />
           </div>
@@ -40,10 +53,7 @@ const Header = () => {
           {/* Mobile Menu Button and Theme Toggle */}
           <div className="md:hidden flex items-center space-x-4">
             <ThemeToggle />
-            <button
-              className="p-2"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
+            <button className="p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? (
                 <X size={24} className="text-slate-700 dark:text-slate-300" />
               ) : (
@@ -58,14 +68,13 @@ const Header = () => {
           <div className="md:hidden mt-4 pb-4 border-t border-slate-200 dark:border-slate-700">
             <div className="flex flex-col space-y-4 pt-4">
               {menuItems.map((item) => (
-                <a
+                <button
                   key={item.href}
-                  href={item.href}
-                  className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 font-medium"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => handleMenuClick(item.href)}
+                  className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 font-medium text-left bg-transparent border-none cursor-pointer"
                 >
                   {item.label}
-                </a>
+                </button>
               ))}
             </div>
           </div>
