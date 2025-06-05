@@ -82,5 +82,5 @@ const Hero = () => {
     </section>
   );
 };
-#hi
+
 export default Hero;
