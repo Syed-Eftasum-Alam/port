@@ -15,7 +15,7 @@ const Header = () => {
   ];
 
   const handleMenuClick = (href: string) => {
-    const targetId = href.substring(1); // Remove the '#'
+    const targetId = href.substring(1); 
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
