@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ChevronDown, Mail, Linkedin, Github, GraduationCap } from 'lucide-react';
+import profile_pic from '../../public/img/dp.png';
 
 const Hero = () => {
   return (
@@ -11,7 +12,7 @@ const Hero = () => {
           <div className="mb-8 flex justify-center">
             <div className="relative">
               <img
-                src="dist/img/d5dbd55f-c822-4fc4-b2de-70c3c6bd086b.png"
+                src={profile_pic}
                 alt="Syed Eftasum Alam"
                 className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover shadow-2xl border-4 border-white dark:border-slate-700"
               />

@@ -1,6 +1,7 @@
 
 import { ExperienceData } from '../types/experienceTypes';
 
+
 export const experienceData: Record<string, ExperienceData> = {
   lecturer: {
     position: "Lecturer",
