@@ -27,10 +27,13 @@ This is my personal portfolio website built using React, TypeScript, and Vite. I
 
 📦 Installation
 
-git clone https://github.com/Syed-Eftasum-Alam/Academic_Portfolio.git
-cd your-portfolio
-npm install
-npm run dev
+`git clone https://github.com/Syed-Eftasum-Alam/Academic_Portfolio.git`
+
+`cd Academic Portfolio`
+
+`npm install`
+
+`npm run dev`
 
 📁 Build for Production
 
