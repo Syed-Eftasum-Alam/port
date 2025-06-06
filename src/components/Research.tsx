@@ -55,7 +55,21 @@ const Research = () => {
       doi:"10.1109/ICCIT60459.2023.10441091",
       year: "2023",
       tags: ["Deep Learning", "CNN", "Image Processing"]
-    },    {
+    }, 
+     {
+      title: "Advancing Individual Well-being: Fatigue Detection Enhancement using Deep Learning Models",
+      Collaborators: ["Mohammad Efaz Khondokar","Afsun Al Mayen", "Mr. Raiyan Rahman"],
+      collaboratorLinks: {
+        "Mr. Raiyan Rahman": "https://www.linkedin.com/in/raiyan-rahman-rr/?originalSubdomain=bd"
+      },
+      description: "Led a study on AI-driven ( Deep Learning) fatigue detection to enhance workplace safety and employee well-being. Evaluated advanced deep learning models on a real-world dataset, identifying optimal solutions for scalable fatigue monitoring. Demonstrated the potential of machine learning to improve productivity and reduce health risks in high-demand industries, contributing to safer and more sustainable work environments.",
+      type: "Conference",
+      publisher: "Association for Computing Machinery(ACM)",
+      doi:"https://doi.org/10.1145/3723178.3723237",
+      year: "2025",
+      tags: ["Deep Learning", "CNN", "Image Processing"]
+    }, 
+       {
       title: "Optimized Transformer Architecture for Enhanced Performance and Computational Efficiency in Natural Language Understanding and Generation",
       Collaborators: ["Mr. Nahid Hossain","Mr. Tarek Hasan"],
       collaboratorLinks: {

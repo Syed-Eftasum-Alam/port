@@ -1,6 +1,7 @@
 import React from 'react';
-import { ChevronDown, Mail, Linkedin, Github, GraduationCap } from 'lucide-react';
+import { ChevronDown, Mail, Linkedin, Github, GraduationCap, FileText } from 'lucide-react';
 import profile_pic from '/img/dp.png'; // Fixed import path
+import cv from '../../public/resource/Syed Eftasum alam_Updated CV.pdf'; 
 
 const Hero = () => {
   const handleScrollTo = (targetId: string) => {
@@ -64,17 +65,29 @@ const Hero = () => {
 
           <div className="flex justify-center space-x-6">
             <a href="mailto:syed.efta@gmail.com" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
-              <Mail size={24} />
+              <Mail size={28} />
             </a>
             <a href="https://www.linkedin.com/in/syed-eftasum-alam/" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
-              <Linkedin size={24} />
+              <Linkedin size={28} />
             </a>
             <a href="https://github.com/Syed-Eftasum-Alam" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
-              <Github size={24} />
+              <Github size={28} />
             </a>
             <a href="https://scholar.google.com/citations?user=jSP5lHUAAAAJ" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
-              <GraduationCap size={24} />
+              <GraduationCap size={28} />
             </a>
+ 
+            <a 
+              href={cv}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="View/Download CV"
+              className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+            >
+              <FileText size={28} />
+            </a>
+
+
           </div>
         </div>
       </div>
