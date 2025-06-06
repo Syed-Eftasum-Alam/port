@@ -58,7 +58,7 @@ const Research = () => {
     }, 
      {
       title: "Advancing Individual Well-being: Fatigue Detection Enhancement using Deep Learning Models",
-      Collaborators: ["Mohammad Efaz Khondokar","Afsun Al Mayen", "Mr. Raiyan Rahman"],
+      Collaborators: ["Mohammad Efaz Khondoker","Afsun Al Mayen", "Mr. Raiyan Rahman"],
       collaboratorLinks: {
         "Mr. Raiyan Rahman": "https://www.linkedin.com/in/raiyan-rahman-rr/?originalSubdomain=bd"
       },
