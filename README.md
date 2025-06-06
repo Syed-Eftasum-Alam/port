@@ -37,7 +37,7 @@ This is my personal portfolio website built using React, TypeScript, and Vite. I
 
 📁 Build for Production
 
-npm run build
+`npm run build`
 
 📬 Feedback
 
