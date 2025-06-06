@@ -1,7 +1,7 @@
 import React from 'react';
 import { ChevronDown, Mail, Linkedin, Github, GraduationCap, FileText } from 'lucide-react';
 import profile_pic from '/img/dp.png'; // Fixed import path
-import cv from '../../public/resource/Syed Eftasum alam_Updated CV.pdf'; 
+import cv from '../../public/resource/Syed Eftasum Alam Updated.pdf';
 
 const Hero = () => {
   const handleScrollTo = (targetId: string) => {
