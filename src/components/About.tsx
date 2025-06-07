@@ -20,13 +20,14 @@ const About = () => {
             
             <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
               I am enthusiastic about embracing technological advancements and contributing to 
-              innovative solutions that address practical challenges.
+              innovative solutions that address practical challenges. I believe in fostering an environment of curiosity, innovation, and collaborative 
+              learning, where people are encouraged to think critically and develop solutions 
+              to real-world problems.
             </p>
 
             <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
-              I believe in fostering an environment of curiosity, innovation, and collaborative 
-              learning, where students are encouraged to think critically and develop solutions 
-              to real-world problems.
+              My goal is to inspire and empower the next generation of computer scientists with my work
+              to push the boundaries of technology and make a positive impact on society.
             </p>
           </div>
 

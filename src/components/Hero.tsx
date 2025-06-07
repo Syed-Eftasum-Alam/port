@@ -63,7 +63,7 @@ const Hero = () => {
             </button>
           </div>
 
-          <div className="flex justify-center space-x-6">
+          <div className="flex justify-center space-x-6 px-6 md:px-0 mb-5 md:mb-0">
             <a href="mailto:syed.efta@gmail.com" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
               <Mail size={28} />
             </a>
