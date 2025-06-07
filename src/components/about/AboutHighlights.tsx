@@ -12,7 +12,7 @@ const AboutHighlights = () => {
     {
       icon: BookOpen,
       title: "Research Focus",
-      description: "Active researcher in emerging technologies and software development"
+      description: "Active researcher in emerging technologies like Computer Vision, Deep Learning and VLM"
     },
     {
       icon: Users,
