@@ -1,4 +1,3 @@
-
 import { ExperienceData } from '../types/experienceTypes';
 import diu from '../../../../public/img/diu.png';
 import uiu from '../../../../public/img/uiu.png';
@@ -17,7 +16,7 @@ export const experienceData: Record<string, ExperienceData> = {
     iconTheme: "bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-400",
     logo:diu,
     profileUrl: "https://faculty.daffodilvarsity.edu.bd/profile/cse/eftasum.html",
-    achievements: [
+    Conducted_Courses: [
       "Artificial Intelligence",
       "Operating System",
       "Database Management System",
@@ -40,7 +39,7 @@ export const experienceData: Record<string, ExperienceData> = {
     theme: "bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 border-amber-200 dark:border-amber-700",
     iconTheme: "bg-amber-100 dark:bg-amber-900 text-amber-600 dark:text-amber-400",
     logo: uiu,
-    achievements: [
+    Conducted_Courses: [
       "Discrete Mathematics",
       "Digital Logic Design",
       "Structured Programming Language",
@@ -58,15 +57,18 @@ export const experienceData: Record<string, ExperienceData> = {
     organization: "United International University",
     department: "Department of Computer Science and Engineering",
     year: "Oct 2023-Jan 2024",
-    description: "Led specialized programming instruction for students requiring additional support in Structured Programming Language fundamentals.",
+    description: "Led specialized programming instruction for students requiring additional support in <strong><em>Structured Programming Language</em></strong> fundamentals.",
     theme: "bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 border-amber-200 dark:border-amber-700",
     iconTheme: "bg-amber-100 dark:bg-amber-900 text-amber-600 dark:text-amber-400",
     logo:uiu,
-    achievements: [
-      "Structured Programming Language (CSE 1111)",
+    Conducted_Courses: [],
+    contentsCovered: [
+      "Basic of Structured Programming Language (C Programming)",
+      "Control Structures and Functions",
       "Programming Fundamentals",
       "Problem Solving Techniques",
-      "Code Debugging and Optimization"
+      "Code Debugging",
+      "Manual Tracing"
     ],
     responsibilities: [
       "Conducted intensive remedial classes for Structured Programming Language (CSE 1111) course",
@@ -84,7 +86,7 @@ export const experienceData: Record<string, ExperienceData> = {
     theme: "bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 border-amber-200 dark:border-amber-700",
     iconTheme: "bg-amber-100 dark:bg-amber-900 text-amber-600 dark:text-amber-400",
     logo: uiu,
-    achievements: [
+    Conducted_Courses: [
       "Introduction to Computer Systems",
       "Structured Programming Language",
       "Object Oriented Programming",

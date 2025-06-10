@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Calendar, Award, Users, Building2, ExternalLink } from 'lucide-react';
 import { ExperienceData } from './types/experienceTypes';
@@ -57,7 +56,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ data, experienceKey }) 
           <span className="text-sm font-medium text-blue-600 dark:text-blue-400">{data.year}</span>
         </div>
 
-        <p className="text-slate-600 dark:text-slate-400 leading-relaxed">{data.description}</p>
+        <p className="text-slate-600 dark:text-slate-400 leading-relaxed" dangerouslySetInnerHTML={{__html: data.description}}></p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-6">
@@ -66,13 +65,17 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ data, experienceKey }) 
             <div className={`w-6 h-6 ${data.iconTheme} rounded-lg flex items-center justify-center mr-3`}>
               <Award size={14} />
             </div>
-            {experienceKey === 'teachingAssistant' ? 'Affiliated Courses' : 'Courses Conducted'}
+            {experienceKey === 'teachingAssistant' 
+              ? 'Affiliated Courses' 
+              : experienceKey === 'Instructor_SPL' 
+                ? 'Contents Covered' 
+                : 'Conducted Courses'}
           </h5>
           <ul className="space-y-2">
-            {data.achievements.map((achievement, index) => (
+            {(experienceKey === 'Instructor_SPL' ? data.contentsCovered : data.Conducted_Courses)?.map((item, index) => (
               <li key={index} className="flex items-start">
                 <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">{achievement}</span>
+                <span className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">{item}</span>
               </li>
             ))}
           </ul>

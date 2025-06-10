@@ -1,4 +1,3 @@
-
 export interface ExperienceData {
   position: string;
   organization: string;
@@ -7,10 +6,11 @@ export interface ExperienceData {
   description: string;
   theme: string;
   iconTheme: string;
-  achievements: string[];
+  Conducted_Courses: string[];
   responsibilities: string[];
   logo?: string;
   profileUrl?: string;
+  contentsCovered?: string[];
 }
 
 export type ExperienceKeys = 'lecturer' | 'Instructor' | 'Instructor_SPL' | 'teachingAssistant';
