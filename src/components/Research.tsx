@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { FileText, ExternalLink, Calendar } from 'lucide-react';
 
@@ -15,7 +14,10 @@ interface ResearchItem {
 }
 
 const Research = () => {
-  const researchItems: ResearchItem[] = [    {
+  const [activeFilter, setActiveFilter] = React.useState<string>('All');
+
+  const researchItems: ResearchItem[] = [
+    {
       title: "An IoT-and cloud-based e-waste management system for resource reclamation with a data-driven decision-making process",
       Collaborators: ["Mr. Abu Bakar Fahad","Mithila Farjana", "Dr.Motaharul Islam"],
       collaboratorLinks: {
@@ -82,6 +84,14 @@ const Research = () => {
     }
   ];
 
+  // Get unique research types for filter buttons
+  const researchTypes = ['All', ...Array.from(new Set(researchItems.map(item => item.type)))];
+
+  // Filter research items based on active filter
+  const filteredResearchItems = activeFilter === 'All' 
+    ? researchItems 
+    : researchItems.filter(item => item.type === activeFilter);
+
   return (
     <section id="research" className="py-20 bg-slate-50 dark:bg-slate-800">
       <div className="container mx-auto px-6">
@@ -93,8 +103,25 @@ const Research = () => {
           </p>
         </div>
 
+        {/* Filter Buttons */}
+        <div className="flex flex-wrap justify-center gap-3 mb-12">
+          {researchTypes.map((type) => (
+            <button
+              key={type}
+              onClick={() => setActiveFilter(type)}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                activeFilter === type
+                  ? 'bg-blue-600 text-white shadow-lg'
+                  : 'bg-white dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-slate-600 border border-slate-200 dark:border-slate-600'
+              }`}
+            >
+              {type}
+            </button>
+          ))}
+        </div>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-1 gap-8">
-          {researchItems.map((item, index) => (
+          {filteredResearchItems.map((item, index) => (
             <div
               key={index}
               className="bg-white dark:bg-slate-900 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700"
