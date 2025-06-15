@@ -77,7 +77,7 @@ const Hero = () => {
               <GraduationCap size={28} />
             </a>
             <a 
-              href="https://orcid.org/my-orcid?orcid=0009-0003-7672-5884"
+              href="https://orcid.org/0009-0003-7672-5884"
               target="_blank"
               rel="noopener noreferrer"
               title="ORCID Profile"
