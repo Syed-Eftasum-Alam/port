@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronDown, Mail, Linkedin, Github, GraduationCap, FileText } from 'lucide-react';
+import { ChevronDown, Mail, Linkedin, Github, GraduationCap, FileText, User } from 'lucide-react';
 import profile_pic from '/img/dp.png'; // Fixed import path
 import cv from '../../public/resource/Syed Eftasum Alam Updated.pdf';
 
@@ -64,19 +64,27 @@ const Hero = () => {
           </div>
 
           <div className="flex justify-center space-x-6 px-6 md:px-0 mb-5 md:mb-0">
-            <a href="mailto:syed.efta@gmail.com" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+            <a href="mailto:syed.efta@gmail.com" title='Email Me' className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
               <Mail size={28} />
             </a>
-            <a href="https://www.linkedin.com/in/syed-eftasum-alam/" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+            <a href="https://www.linkedin.com/in/syed-eftasum-alam/" title='LinkedIn Profile' className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
               <Linkedin size={28} />
             </a>
-            <a href="https://github.com/Syed-Eftasum-Alam" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+            <a href="https://github.com/Syed-Eftasum-Alam" title='GitHub Profile' className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
               <Github size={28} />
             </a>
-            <a href="https://scholar.google.com/citations?user=jSP5lHUAAAAJ" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
+            <a href="https://scholar.google.com/citations?user=jSP5lHUAAAAJ" title='Google Scholar Profile' className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
               <GraduationCap size={28} />
             </a>
- 
+            <a 
+              href="https://orcid.org/my-orcid?orcid=0009-0003-7672-5884"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="ORCID Profile"
+              className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+            >
+              <User size={28} />
+            </a>
             <a 
               href={cv}
               target="_blank"
@@ -86,8 +94,6 @@ const Hero = () => {
             >
               <FileText size={28} />
             </a>
-
-
           </div>
         </div>
       </div>

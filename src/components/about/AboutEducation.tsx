@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { GraduationCap, Calendar, Building2 } from 'lucide-react';
 import uiu from '../../../public/img/uiu.png';
@@ -22,8 +21,8 @@ const AboutEducation = () => {
       year: "2017 - 2019",
       description: "Group: Science | GPA: 5.00 (On a scale of 5)",
       logo: dcc,
-      theme: "bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900/20 dark:to-emerald-900/20 border-green-300 dark:border-green-700",
-      iconColor: "text-green-700 dark:text-green-400"
+      theme: "bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900/20 dark:to-indigo-900/20 border-blue-300 dark:border-blue-700",
+      iconColor: "text-blue-700 dark:text-blue-400"
     },
     {
       degree: "Secondary School Certificate",
@@ -31,8 +30,8 @@ const AboutEducation = () => {
       year: "2015 - 2017", 
       description: "Group: Science | GPA: 5.00 (On a scale of 5)",
       logo: scpsc,
-      theme: "bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/20 dark:to-cyan-900/20 border-blue-300 dark:border-blue-700",
-      iconColor: "text-blue-700 dark:text-blue-400"
+      theme: "bg-gradient-to-br from-red-100 to-pink-100 dark:from-red-900/20 dark:to-pink-900/20 border-red-300 dark:border-red-700",
+      iconColor: "text-red-700 dark:text-red-400"
     }
   ];
 
