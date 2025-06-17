@@ -20,7 +20,7 @@ const Projects = () => {
       title: "Currency-Converter",
       description: "Currency Converter is a lightweight command-line application developed in pure C . Designed for Windows systems, it offers real-time currency conversion using free APIs, enabling users to convert between various currencies, view historical exchange rates, and receive notifications on rate changes. The application supports features like viewing the highest rates from history and accessing full exchange rate histories. However, due to limitations of the free API used, historical data is restricted to the past year, and rates for volatile currencies like Bitcoin may not always be up-to-date. The project includes a MainMenu.c file for compilation, and utilizes external libraries such as rlutil and cJSON for enhanced functionality. It's a practical tool for users seeking a straightforward currency conversion utility without the need for a graphical interface",
       technologies: ["C Programming", "CLI", "Financial Tools"],
-      link: "https://github.com/ehsan18t/Currency-ConverterCurrency-Converter"
+      link: "https://github.com/Syed-Eftasum-Alam/Currency-Converter"
     },
     {
       title: "HireHub",
